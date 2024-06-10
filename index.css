@@ -1,0 +1,544 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Recursive&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+
+}
+body{
+    background-color: #E3E6E6;
+}
+
+nav{
+    height: 60px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    position:sticky;
+    top:0px;
+    z-index: 100;
+
+}
+
+.logo-container{
+
+    height: 40px;
+    width: 120px;
+    padding: 1px 8px 0px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container .logo{
+    height: 40px;
+    width: 100%;
+    
+    background-image: url(shopping-logo.jpg);
+    background-size: cover;
+    background-position:center ;
+    
+    
+   
+}
+
+nav .location{
+    height: 40px;
+    width: 90px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:rgb(254, 255, 253);
+    font-size: 13px;
+    
+}
+
+.location-logo{
+    height: 50px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 14px;
+    padding-left: 7px;
+    margin-bottom:-3px;
+}
+.fa-location-dot{
+    font-size: 16px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.first-info{
+    font-size:12px ;
+    font-weight: 100;
+    color:rgb(200, 192, 192)
+}
+.second-info{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+
+/* Search-Bar styling */
+
+nav .search{
+    height: 40px;
+    width: 45%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search select{
+
+    height: 40px;
+    width: 50px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 3px;
+    border: none;
+
+    color:rgb(84, 88, 92);
+    font-size: 12px;
+}
+.search button{
+    height: 40px;
+    width: 50px;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 22px;
+    background-color: rgb(14, 157, 50);
+
+}
+.search input{
+    height: 40px;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+/* sign in info styling */
+
+nav .sign-in{
+    height: 100%;
+    width: 10%;
+    /* border: 2px solid green; */
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sign-in p:first-child{
+    font-size: 0.7rem;
+    align-self: flex-start;
+    
+}
+.sign-in p:nth-child(2){
+    font-size: 0.76 rem;
+    align-self: flex-start;
+    font-weight: 800;
+}
+nav .orders{
+    height: 100%;
+    width: 7%;
+    /* border: 2px solid green; */
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orders p:first-child{
+    font-size: 0.7rem;
+    align-self: flex-start;
+    
+}
+.orders p:nth-child(2){
+    font-size: 0.76 rem;
+    align-self: flex-start;
+    font-weight: 800;
+}
+nav .cart{
+    height: 50px;
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid green; */
+    
+}
+
+.fa-cart-shopping{
+    color:white;
+    font-size: 30px;
+
+}
+
+
+/* ----------------------------Styling sub nav---------------------- */
+
+.sub-nav{
+    height: 39px;
+    background-color: #183D3D;
+    display: flex;
+    align-items: center;
+    color:white;
+
+    
+}
+
+.sub-nav .menu{
+    display: flex;
+    align-items:center;
+    width: 7%;
+    margin-left: 5px;
+
+}
+.fa-bars{
+    font-size: 18px;
+    margin-right: 12px;
+
+}
+
+.sub-nav .content{
+  
+}
+a{
+    text-decoration: none;
+    color:white;
+    margin-right: 10px;
+}
+
+.hero-section{
+    height: 500px;
+    width: 100%;
+    background: url('shoppingLogo4.jpg');
+
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.text-stripe{
+    height:38px ;
+    width: 94%;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 100px;
+    text-align: center;
+    border-radius: 4px;
+    font-family: 'recursive';
+
+}
+
+
+
+/* -----------------------------Shopping section----------------- */
+
+
+.shopping-content-1{
+    margin: auto;
+    width: 94%;
+    height: 220%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top:-100px;
+    flex-wrap: wrap;
+
+    
+}
+
+
+
+.box{
+   
+    
+    height: 400px;
+    width:340px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 6px;
+    transition: all ease-in-out 0.6s;
+   
+    
+
+}
+.box:hover{
+    height: 370px;
+    width: 310px;
+    box-shadow: 5px 5px rgb(146, 136, 136);
+    
+
+
+}
+.top-section{
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 13px;
+}
+.bottom-section{
+    font-size: 0.85rem;
+    margin-top: 8px;
+    
+    
+}
+.img-container{
+    height: 75%;
+    width: 85%;
+    background-image: url("computer.avif");
+   
+}
+.box2 .img-container{
+    background-image: url('gpu.jpg');
+    background-size: cover;
+}
+.box3 .img-container{
+    background-image: url('ram.jpg');
+    background-size: cover;
+}
+.box4 .img-container{
+    background-image: url('storage.jpg');
+    background-size: cover;
+}
+.box5 .img-container{
+    background-image: url('jacket.jpg');
+    background-size: cover;
+}
+.box6 .img-container{
+    background-image: url('shirt.jpg');
+    background-size: cover;
+}
+.box7 .img-container{
+    background-image: url('saree.jpg');
+    background-size: cover;
+}
+.box8 .img-container{
+    background-image: url('jwellery.jpg');
+    background-size: cover;
+}
+.box9 .img-container{
+    background-image: url('vegetables.jpg');
+    background-size: cover;
+}
+.box10 .img-container{
+    background-image: url('fruits.jpg');
+    background-size: cover;
+}
+.box11 .img-container{
+    background-image: url('medicine.jpg');
+    background-size: cover;
+}
+.box12 .img-container{
+    background-image: url('electornics.jpg');
+    background-size: cover;
+}
+
+
+/* ----------------welcome section------------------------------ */
+
+.welcome{
+    height: 30px;
+    background-color:#5C8374;
+    font-weight: 800;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    height:480px ;
+
+}
+
+.content-items{
+    height: 350px;
+    background-color:#183D3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content-box{
+    height: 80%;
+    margin-right: 6%;
+    overflow: hidden;
+    
+}
+
+.content-box p{
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+
+}
+.content-box a{
+    display: block;
+    margin-top: 10px;
+    color: #b9c3c3;
+    font-size: 0.9rem;
+}
+
+.footer-logos{
+    height: 58px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.footer-logos .logo{
+    height: 110%;
+    width: 90px;
+    background-image: url(shopping-logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -30px;
+    margin-right: 10px;
+}
+
+.copyright{
+    height: 80px;
+    background-color: rgb(38, 34, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+.copyright .content1 a{
+    color:rgb(116, 139, 128);
+}
+.copyright .content2{
+    color:white;
+    font-size: 0.7rem;
+}
+span{
+    position: relative;
+    top:2.5px;
+}
+
+@media screen and (min-width:600px and max-width: 1300px  ) {
+    
+    .text-stripe {
+        font-size:0.8rem;
+       height: 50px;
+    }
+  .box{
+        height: 300px;
+        width: 240px;
+    }
+
+   .sign-in p:nth-child(2){
+       font-size:12px;
+    }
+    .orders p:nth-child(2){
+        font-size:12px;
+     }
+  }
+
+@media screen and (max-width: 500px) {
+    
+    .text-stripe {
+        color: rgb(145, 106, 5);
+        font-size:0.8rem;
+       height: 60px;
+       margin-top:100px;
+    }
+    .shopping-content-1{
+        width: 100dvw;
+        justify-content: center;
+        
+    }
+
+    .box{
+        width: 80%;
+       height: 350px;
+        
+
+    }
+    .img-container{
+        width: 80%;
+        height: 70%;
+    }
+    .content-box p{
+        font-size: 1rem;
+    }
+    .content-box a{
+        font: 0.5rem;
+    }
+
+    .sub-nav .content{
+        font-size: 0.7rem;
+        margin-left: 15px;
+    }
+    .sub-nav .menu{
+        font-size: 0.7rem;
+    }
+    .sign-in{
+        visibility: hidden;
+    }
+    .orders{
+        visibility: hidden !important;
+    }
+    .location{
+        display:none !important;
+    }
+    .search{
+        width: 95%  !important;
+        margin-left: 20px !important;
+        
+        
+    }
+    .search input{
+        font-size: 0.7rem;
+      
+       
+    }
+    .search select{
+        font-size: 0.8rem;
+        background-color: rgb(66, 63, 63);
+        color:white;
+    }
+    nav{
+        justify-content:space-evenly ;
+        align-items: center ;
+    }
+    .cart{
+        margin-right: 6px;
+
+    }
+    
+  }
